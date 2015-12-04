@@ -58,8 +58,8 @@ de_dT = (hbar*F/Teq).^2/boltz.*exp(hbar*F/boltz/Teq)./(exp(hbar*F/boltz/Teq)-1).
 
 Nmodes = length(F); 
 
-T  = zeros(Ntt,NX);
-Qx = zeros(Ntt,NX);
+T  = zeros(Ntt,NX); % array storing the temperature solution
+Qx = zeros(Ntt,NX); % array storing the heat flux solution
 
 % cumulative distribution functions
 cumul_base = zeros(Nmodes,1);
